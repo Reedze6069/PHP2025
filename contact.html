@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Important to make website responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+
+    <!-- Link our CSS file -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .contact-section {
+            background: url("images/bg.jpg") no-repeat center center;
+            background-size: cover;
+            padding: 7% 0;
+        }
+
+        .contact-form-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .contact-form-container h2,
+        .contact-form-container .order-label {
+            color: #2f3542;
+        }
+    </style>
+</head>
+
+<body>
+<!-- Navbar Section Starts Here -->
+<section class="navbar">
+    <div class="container">
+        <div class="logo">
+            <a href="#" title="Logo">
+                <img src="images/logo.jpg" alt="Restaurant Logo" class="img-responsive">
+            </a>
+        </div>
+
+        <div class="menu text-right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="categories.html">Categories</a></li>
+                <li><a href="foods.html">Foods</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="clearfix"></div>
+    </div>
+</section>
+<!-- Navbar Section Ends Here -->
+
+<!-- Contact Section Starts Here -->
+<section class="contact-section">
+    <div class="contact-form-container">
+        <h2 class="text-center">Get in Touch with Us</h2>
+        <form id="contactForm" action="#" class="order" novalidate>
+            <fieldset>
+                <legend>Contact Details</legend>
+
+                <div class="order-label">First Name</div>
+                <input type="text" id="firstName" name="firstname" class="input-responsive" placeholder="E.g. John">
+                <div id="firstNameError" class="error-msg"></div>
+
+                <div class="order-label">Surname</div>
+                <input type="text" id="surname" name="lastname" class="input-responsive" placeholder="E.g. Doe">
+                <div id="surnameError" class="error-msg"></div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Message</legend>
+
+                <div class="order-label">Subject</div>
+                <textarea id="subject" name="subject" class="input-responsive" placeholder="Write something..." style="height: 200px;"></textarea>
+                <div id="subjectError" class="error-msg"></div>
+
+                <input type="submit" value="Submit" class="btn btn-primary">
+            </fieldset>
+            <div id="formSuccess" style="color: #2ed573; margin-top: 10px;"></div>
+
+        </form>
+
+    </div>
+</section>
+<!-- Contact Section Ends Here -->
+
+<!-- Social Section Starts Here -->
+<section class="social">
+    <div class="container text-center">
+        <ul>
+            <li>
+                <a href="#"><img src="https://img.icons8.com/fluent/50/000000/facebook-new.png" alt="Facebook"/></a>
+            </li>
+            <li>
+                <a href="#"><img src="https://img.icons8.com/fluent/48/000000/instagram-new.png" alt="Instagram"/></a>
+            </li>
+            <li>
+                <a href="#"><img src="https://img.icons8.com/fluent/48/000000/twitter.png" alt="Twitter"/></a>
+            </li>
+        </ul>
+    </div>
+</section>
+<!-- Social Section Ends Here -->
+
+<!-- Footer Section Starts Here -->
+<section class="footer">
+    <div class="container text-center">
+        <p><a href="#">Reedze</a></p>
+    </div>
+</section>
+<!-- Footer Section Ends Here -->
+
+<!-- Link to JS validation file -->
+<script src="js/validate.js"></script>
+</body>
+</html>

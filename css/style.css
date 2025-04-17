@@ -1,0 +1,366 @@
+
+*{
+    margin: 0 0;
+    padding: 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0.5%;
+}
+.img-responsive{
+    width: 100%;
+}
+.img-curve{
+    border-radius: 15px;
+}
+
+.text-right{
+    text-align: right;
+}
+.text-center{
+    text-align: center;
+}
+.text-left{
+    text-align: left;
+}
+.text-white{
+    color: white;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+a{
+    color: #ff6b81;
+    text-decoration: none;
+}
+a:hover{
+    color: #ff4757;
+}
+
+.btn{
+    padding: 1%;
+    border: none;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+.btn-primary{
+    background-color: #ff6b81;
+    color: white;
+    cursor: pointer;
+}
+.btn-primary:hover{
+    color: white;
+    background-color: #ff4757;
+}
+h2{
+    color: #2f3542;
+    font-size: 2rem;
+    margin-bottom: 2%;
+}
+h3{
+    font-size: 1.5rem;
+}
+.float-container{
+    position: relative;
+}
+.float-text{
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+}
+fieldset{
+    border: 1px solid white;
+    margin: 5%;
+    padding: 3%;
+    border-radius: 5px;
+}
+
+
+/* CSS for navbar section */
+
+.logo{
+    width: 9%;
+    float: left;
+}
+.menu{
+    line-height: 60px;
+}
+.menu ul{
+    list-style-type: none;
+}
+
+.menu ul li{
+    display: inline;
+    padding: 1%;
+    font-weight: bold;
+}
+/* === FORCE SAME SIZE FOR CATEGORIES IMAGES === */
+.categories .box-3 img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 15px; /* keeps your curved corner style */
+}
+
+
+/* CSS for Food Search Section */
+
+.food-search{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 7% 0;
+}
+
+.food-search input[type="search"]{
+    width: 50%;
+    padding: 1%;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+
+/* CSS for Categories */
+.categories{
+    padding: 4% 0;
+}
+
+.box-3{
+    width: 28%;
+    float: left;
+    margin: 2%;
+}
+
+
+/* CSS for Food Menu */
+.food-menu{
+    background-color: #ececec;
+    padding: 4% 0;
+}
+.food-menu-box{
+    width: 80%;
+    margin: 2%;
+    padding: 2%;
+    float: left;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.food-menu-img{
+    width: 20%;
+    float: left;
+}
+
+.food-menu-desc{
+    width: 70%;
+    float: left;
+    margin-left: 8%;
+}
+
+.food-price{
+    font-size: 1.2rem;
+    margin: 2% 0;
+}
+.food-detail{
+    font-size: 1rem;
+    color: #747d8c;
+}
+
+
+/* CSS for Social */
+.social ul{
+    list-style-type: none;
+}
+.social ul li{
+    display: inline;
+    padding: 1%;
+}
+
+/* for Order Section */
+.order{
+    width: 50%;
+    margin: 0 auto;
+}
+.input-responsive{
+    width: 96%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.order-label{
+    margin-bottom: 1%;
+    font-weight: bold;
+}
+
+
+
+/* CSS for Mobile Size or Smaller Screen */
+
+@media only screen and (max-width:768px){
+    .logo{
+        width: 80%;
+        float: none;
+        margin: 1% auto;
+    }
+
+    .menu ul{
+        text-align: center;
+    }
+
+    .food-search input[type="search"]{
+        width: 90%;
+        padding: 2%;
+        margin-bottom: 3%;
+    }
+
+    .btn{
+        width: 91%;
+        padding: 2%;
+    }
+
+    .food-search{
+        padding: 10% 0;
+    }
+
+    .categories{
+        padding: 20% 0;
+    }
+    h2{
+        margin-bottom: 10%;
+    }
+    .box-3{
+        width: 100%;
+        margin: 4% auto;
+    }
+
+    .food-menu{
+        padding: 20% 0;
+    }
+
+    .food-menu-box{
+        width: 90%;
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+    .social{
+        padding: 5% 0;
+    }
+    .order{
+        width: 100%;
+    }
+    /* ===================== */
+    /* CONTACT PAGE STYLING  */
+    /* ===================== */
+    #contactForm {
+        width: 100%;
+        max-width: 600px;
+        margin: 30px auto;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        text-align: left;
+    }
+
+    #contactForm .form-group {
+        margin-bottom: 20px;
+    }
+
+    #contactForm label {
+        display: block;
+        margin-bottom: 8px;
+        font-weight: bold;
+        color: #2f3542;
+    }
+
+    #contactForm input[type="text"],
+    #contactForm select,
+    #contactForm textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+    }
+
+    #contactForm input:focus,
+    #contactForm select:focus,
+    #contactForm textarea:focus {
+        border-color: #ff6b81;
+        outline: none;
+    }
+
+    #contactForm textarea {
+        resize: vertical;
+        min-height: 120px;
+    }
+
+    #contactForm button {
+        background-color: #ff6b81;
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    #contactForm button:hover {
+        background-color: #ff4757;
+    }
+    /* Contact section background image and layout */
+    #contact {
+        background: url("images/bg.jpg") no-repeat center center;  /* full-width background image */
+        background-size: cover;              /* cover entire section with image :contentReference[oaicite:2]{index=2} */
+        padding: 60px 0;                     /* top and bottom padding for spacing */
+        /* You can add background-attachment: fixed; here if you want a parallax fixed bg effect */
+    }
+
+    /* Centered contact form container with translucent white background */
+    .contact-form-container {
+        background-color: rgba(255, 255, 255, 0.9); /* white background with 90% opacity */
+        max-width: 600px;          /* limit width so it doesn’t stretch too wide */
+        margin: 0 auto;            /* center the container within the section */
+        padding: 20px 30px;        /* internal padding for breathing room around content */
+        border-radius: 8px;        /* slightly rounded corners for a polished look */
+        /* Optional: add box-shadow for more contrast (e.g., box-shadow: 0 0 10px rgba(0,0,0,0.1); ) */
+    }
+
+    /* (Optional) Ensure text inside the contact form container is dark for contrast */
+    .contact-form-container,
+    .contact-form-container p,
+    .contact-form-container h2,
+    .contact-form-container label {
+        color: #000; /* use a dark text color to remain legible on the light background */
+    }
+    .error-msg {
+        color: #ff4757;
+        font-size: 0.9rem;
+        margin-top: -5px;
+        margin-bottom: 10px;
+    }
+
+    .input-error {
+        border: 2px solid #ff4757;
+        background-color: #ffecec;
+    }
+    .input-success {
+        border: 2px solid #2ed573;
+        background-color: #f0fff5;
+    }
+
+
+}
