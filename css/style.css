@@ -192,7 +192,7 @@ fieldset{
 .input-responsive{
     width: 96%;
     padding: 1%;
-    margin-bottom: 3%;
+    margin-bottom: 10px;
     border: none;
     border-radius: 5px;
     font-size: 1rem;
@@ -200,6 +200,37 @@ fieldset{
 .order-label{
     margin-bottom: 1%;
     font-weight: bold;
+}
+/* ===================== */
+/* Global Validation Styling */
+/* ===================== */
+.error-msg {
+    color: #e74c3c;
+    font-size: 0.9em;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    display: block;
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
+.input-error {
+    border: 1px solid #e74c3c;
+    background-color: #ffe6e6;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.input-success {
+    border: 2px solid #2ed573;
+    background-color: #f0fff5;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+#formSuccess {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+    color: #2ed573;
+    transition: opacity 0.4s ease;
 }
 
 
@@ -346,21 +377,4 @@ fieldset{
     .contact-form-container label {
         color: #000; /* use a dark text color to remain legible on the light background */
     }
-    .error-msg {
-        color: #ff4757;
-        font-size: 0.9rem;
-        margin-top: -5px;
-        margin-bottom: 10px;
-    }
-
-    .input-error {
-        border: 2px solid #ff4757;
-        background-color: #ffecec;
-    }
-    .input-success {
-        border: 2px solid #2ed573;
-        background-color: #f0fff5;
-    }
-
-
 }
